@@ -6,12 +6,17 @@ body {
   flex-direction: column;
 }
 
+.body {
+  display: flex;
+}
+
 .header {
   height: 72px;
   background: darkmagenta;
   color: white;
   font-size: 32px;
   font-weight: 900;
+  padding-left: 16px;
   display: flex;
   align-items: center;
   
@@ -24,18 +29,46 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .sidebar {
   width: 300px;
-  background: royalblue
-  
+  background: royalblue;
+  padding: 16px;;
+  display: flex;
+  flex-shrink: 0;
+  }
+
+  a {
+    font: size 24px;;
+    color: white;
+    text-decoration: none;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  li {
+    padding-bottom: 18px;
+  }
+
+.container {
+  padding: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
-  display: flex;
-  flex-wrap: wrap;
+  padding: 16px;
+  margin: 16px;
+  max-width: 200px;
+
 }
