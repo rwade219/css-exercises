@@ -8,6 +8,7 @@ body {
 
 .body {
   display: flex;
+  flex-grow: 1;
 }
 
 .header {
@@ -23,14 +24,14 @@ body {
 }
 
 .footer {
-  height: 72px;
+  height: 25px;
   background: #eee;
   color: darkmagenta;
   display: flex;
   align-items: center;
   justify-content: center;
   position: fixed;
-  bottom: 0;
+  bottom: 0px;
   width: 100%;
 }
 
@@ -60,7 +61,7 @@ body {
   padding: 32px;
   display: flex;
   flex-wrap: wrap;
-  align-content: space-around;
+  
 }
 
 .card {
@@ -69,6 +70,6 @@ body {
   border-radius: 4px;
   padding: 16px;
   margin: 16px;
-  max-width: 200px;
+  max-width: 350px;
 
 }
